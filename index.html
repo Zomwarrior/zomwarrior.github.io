@@ -1,8 +1,141 @@
-<html>
-  <head>
-    <title>My GitHub Page</title>
-  </head>
-  <body>
-    <h1>Welcome to my GitHub Page!</h1>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: flex-start;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .image-container {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .about-me {
+            flex: 1;
+            max-width: 500px;
+        }
+
+        .about-me h2 {
+            font-size: 24px;
+        }
+
+        .about-me p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .projects {
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* Always 4 cards per row */
+            gap: 20px;
+        }
+
+        .projects-section h2 {
+            margin-left: 25px;
+        }
+
+        .project-card {
+            background: white;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+    </header>
+
+    <div class="container">
+        <div class="image-container">
+            <img src="my_photo.jpg" alt="My Photo" style="width: 100%; max-width: 400px; border-radius: 10px;">
+        </div>
+
+        <div class="about-me">
+            <h2>About Me</h2>
+            <p>Hi, I'm Evan, a passionate software developer with a love for creating innovative solutions. 
+                I have experience in AI, game development, computer graphics, and web applications. 
+                In my spare time, I enjoy playing various PC games and developing new video game ideas.
+                I also enjoy making music.</p>
+        </div>
+    </div>
+    
+    <section class="projects-section">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project-card">
+                <h3>Artificial Intelligence in Ultimate Tic-Tac-Toe - Aug 2025</h3>
+                <p><strong>Algorithm Design:</strong> Developed and implemented decision-making AI algorithms, including <strong>Minimax</strong> and <strong>Monte Carlo Tree Search (MCTS)</strong>, to optimize gameplay strategies in a custom-built Ultimate Tic-Tac-Toe environment.</p>
+                <p><strong>Reinforcement Learning:</strong> Built and trained a <strong>Deep Q-Network (DQN)</strong> reinforcement learning agent to improve gameplay through <strong>self-play</strong>, enhancing the agent's ability to learn and adapt.</p>
+                <p><strong>Collaboration & Version Control:</strong> Utilized <strong>GitHub</strong> for version control and collaborated effectively within a team of three developers to ensure smooth project progression and code integration.</p>
+            </div>
+            <div class="project-card">
+                <h3>Divide and Conquer Video Game - July 2025</h3>
+                <p><strong>Networking & Server Setup:</strong> Collaborated with a team of 4 programmers to develop a multiplayer game, focusing on the networking aspect. Utilized <strong>Python</strong> and <strong>sockets</strong> to set up a server for remote connections, enabling seamless gameplay through port forwarding.</p>
+                <p><strong>Game Development & Mechanics:</strong> Worked alongside another developer on the backend and networking, while other team members focused on implementing the core game mechanics. The game is a 4-player scribbling and drawing game where players must fill squares at least 50% before they auto-fill with their assigned color. Unfilled squares revert to white if under 50% completion.</p>
+                <p><strong>Lobby & Chat Functionality:</strong> Developed a lobby screen that allows players to join, leave, and chat before starting the game. The lobby ensures that players can "ready up" before the game begins, providing a smooth transition from pre-game to active gameplay.</p>
+                <p><strong>Tools & Technologies:</strong> Used <strong>Python</strong> and <strong>Pygame</strong> for both the game development and networking portions of the project, ensuring smooth multiplayer functionality and game experience.</p>
+            </div>
+            <div class="project-card">
+                <h3>Computer Graphics Panorama Generator - Feb 2025</h3>
+                <p><strong>Panorama Generation:</strong> Developed a MATLAB-based program to automatically generate panoramic images from multiple input images. The system used keypoints and image stitching techniques to align and merge images into a seamless panorama.</p>
+                <p><strong>Keypoint Detection & Feature Matching:</strong> Utilized SURF (Speeded-Up Robust Features) for keypoint detection and feature extraction across images. The system applied RANSAC (Random Sample Consensus) for robust homography estimation and feature matching between overlapping image pairs.</p>
+                <p><strong>Stitching Process:</strong> Implemented both horizontal and vertical image stitching, aligning multiple images from different sets. The program handled issues like image warping, blending, and feathering to ensure a smooth transition between the stitched images.</p>
+                <p><strong>Automation & Output:</strong> The tool automated the entire panorama generation process, handling multiple image sets, processing keypoints, computing transformations, and stitching images together. It saved the final panoramic images in a specified output path.</p>
+                <p><strong>Technologies:</strong> The project was implemented in <strong>MATLAB</strong>, using advanced image processing techniques like SURF, RANSAC, and homography transformations. The project utilized custom functions to handle image stitching, blending, and keypoint extraction efficiently.</p>
+            </div>
+            <div class="project-card">
+                <h3>Melanoma Detection using CNN Models - Nov 2024</h3>
+                <p><strong>Model Training:</strong> Trained multiple Convolutional Neural Network (CNN) models to classify images of melanoma versus nevi, enhancing accuracy in medical image classification.</p>
+                <p><strong>Collaboration & Version Control:</strong> Used <strong>GitHub</strong> for version control while collaborating within a team of five developers, ensuring efficient code integration and project management.</p>
+                <p><strong>PyTorch & Model Expertise:</strong> Gained hands-on experience with training various PyTorch-based CNN architectures, including <strong>DenseNet121</strong>, <strong>MobileNetV2</strong>, and <strong>ResNet18</strong>, while utilizing <strong>GRAD-CAM</strong> for visualizing heatmaps to understand model decisions.</p>
+            </div>
+            <div class="project-card">
+                <h3>Bamboo Industries - Game Jam - Aug 2024</h3>
+                <p><strong>Game Development:</strong> Designed and developed a factory-style video game as part of a diverse team consisting of 4 programmers, 2 artists, and 1 composer, contributing to all aspects of gameplay mechanics and overall game design.</p>
+                <p><strong>Version Control & Collaboration:</strong> Enhanced version control skills by effectively managing branches and resolving merge conflicts using <strong>GitHub</strong>, ensuring smooth collaboration among the team.</p>
+                <p><strong>Teamwork & Innovation:</strong> Strengthened teamwork abilities by completing assigned tasks while also bringing innovation and unique perspectives to the project, helping to improve both my work and the work of my teammates.</p>
+            </div>
+            <div class="project-card">
+                <h3>Store Inventory Web Application - Jul 2024</h3>
+                <p><strong>App Development:</strong> Designed and developed a comprehensive store inventory management app with key features such as adding/removing stock in a <strong>MySQL</strong> database, implementing unique user logins and sessions, and integrating <strong>Google APIs</strong> for calendar and email management.</p>
+                <p><strong>Agile Development & Team Collaboration:</strong> Utilized <strong>Agile</strong> development methodologies while collaborating within a team of five developers to ensure continuous delivery and iterative progress throughout the project lifecycle.</p>
+                <p><strong>Testing & Quality Assurance:</strong> Gained experience in writing <strong>unit tests</strong> and <strong>acceptance tests</strong> to ensure the application’s functionality, stability, and user experience met high standards.</p>
+            </div>
+            <div class="project-card">
+                <h3>Swapped Video Game - May 2022</h3>
+                <p><strong>Game Creation & Design:</strong> Created, designed, and developed a unique video game, including custom sprites, music, and animations, using <strong>Piskel</strong> for sprite design, <strong>GarageBand</strong> for music creation, and <strong>Unity</strong> for development.</p>
+                <p><strong>Programming & Problem Solving:</strong> Gained valuable programming experience by implementing player movement mechanics using <strong>C#</strong>, enhancing problem-solving skills throughout the development process.</p>
+                <p><strong>Design & Level Implementation:</strong> Improved game design skills by brainstorming and implementing engaging level designs and puzzle mechanics, ensuring a fun and challenging gameplay experience.</p>
+                <p><strong>Skills & Experience:</strong> Developed a broad range of skills, including programming, problem-solving, creativity, game testing, and implementation, gaining hands-on experience in all aspects of video game development.</p>
+            </div>
+        </div>
+    </section>
+</body>
 </html>
